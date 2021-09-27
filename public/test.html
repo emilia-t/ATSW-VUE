@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let obj={
+        $children:[
+            {
+                $children:[
+                    {
+                        $children:[
+                            'a1','a2'
+                        ]
+                    },
+                    {
+                        $children:[
+                            'b1','b2'
+                        ]
+                    },
+                ]
+            }
+        ]
+    };
+    var dataList=[];
+    function con(child) {
+        dataList.push(child);
+        if(child.$children.length!==0){
+            for(let i=0;i<child.$children.length;i++){
+                con(child[i])
+            }
+        }
+    }
+    con(obj);
+    let x=[1,2,3,4,];
+    for (i in x){
+        console.log(x[i])
+    }
+</script>
+</body>
+</html>
