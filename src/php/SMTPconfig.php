@@ -1,3 +1,3 @@
 <?php
-$licenseCodePOP3='idercelbivrmcjcc';
-$licenseCodeIMAP='lgtsakbmvyfaciij';
+$licenseCodePOP3='';
+$licenseCodeIMAP='';
